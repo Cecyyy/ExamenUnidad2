@@ -40,4 +40,55 @@ public class Calculadora {
     public void setSegundoValor(double segundoValor) {
         this.segundoValor = segundoValor;
     }
+    public double sumar (){
+         double resultadoSuma;
+        getPrimerValor();
+        getSegundoValor();
+       resultadoSuma=primerValor+segundoValor;
+        return resultadoSuma ;
+    }
+
+    public double restar (){
+        double resultadoResta;
+        getPrimerValor();
+        getSegundoValor();
+        resultadoResta=primerValor-segundoValor;
+
+        return resultadoResta ;
+
+
+
+    }
+    public double multipricar(){
+        double resultadoMultiplicacion;
+        getPrimerValor();
+        getSegundoValor();
+        resultadoMultiplicacion=primerValor*segundoValor;
+        return resultadoMultiplicacion;
+}
+
+public double dividir(){
+        double resultadoDivision;
+
+        getPrimerValor();
+        getSegundoValor();
+
+        resultadoDivision= primerValor/segundoValor;
+        return resultadoDivision;
+}
+public void elevarAPotencia(){
+        String resultadoPotencia;
+        getPrimerValor();
+        getSegundoValor();
+}
+
+    @Override
+    public String toString() {
+        return "Calculadora{" +
+                "marca='" + marca + '\'' +
+                ", esCientifica=" + esCientifica +
+                ", primerValor=" + primerValor +
+                ", segundoValor=" + segundoValor +
+                '}';
+    }
 }
